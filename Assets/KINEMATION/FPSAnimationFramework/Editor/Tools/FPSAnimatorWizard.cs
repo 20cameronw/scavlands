@@ -8,6 +8,7 @@ using KINEMATION.FPSAnimationFramework.Runtime.Camera;
 using KINEMATION.KAnimationCore.Runtime.Input;
 
 using KINEMATION.KAnimationCore.Editor.Misc;
+using KINEMATION.ProceduralRecoilAnimationSystem.Runtime;
 
 
 using System.IO;
@@ -130,6 +131,7 @@ namespace KINEMATION.FPSAnimationFramework.Editor.Tools
             inputController.inputConfig = _inputConfig;
             
             InitializeComponent<FPSPlayablesController>(character.gameObject);
+            InitializeComponent<RecoilAnimation>(character.gameObject);
             rigComponent.RefreshHierarchy();
 
             string path = $"{KEditorUtility.GetProjectWindowFolder()}/{character.name}_FPSAnimator";

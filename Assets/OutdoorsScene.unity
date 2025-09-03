@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 8366.347, g: 5746.817, b: 4838.0005, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2787,6 +2787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FPSGenericPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102044144766431328, guid: 69f7c2774bded984385615c8e8d9cd03,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7148569620543255837, guid: 69f7c2774bded984385615c8e8d9cd03,
         type: 3}

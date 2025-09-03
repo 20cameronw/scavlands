@@ -6,8 +6,7 @@
     ],
     "includePlatforms": [],
     "excludePlatforms": [
-        "EmbeddedLinux",
-        "Lumin"
+        "EmbeddedLinux"
     ],
     "allowUnsafeCode": false,
     "overrideReferences": false,
