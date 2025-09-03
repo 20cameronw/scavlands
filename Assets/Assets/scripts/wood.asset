@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4d558d9d1a2b84f847d66d0b45cad1, type: 3}
   m_Name: wood
   m_EditorClassIdentifier: 
-  itemId: wood
-  displayName: Wood
-  width: 1
+  itemId: Ak
+  displayName: AK-74
+  width: 2
   height: 1
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: e2165e82f995bc248b3081f17d760054, type: 3}
   stackable: 1
   maxStack: 1000
   tags: []
