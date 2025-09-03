@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 8366.347, g: 5746.817, b: 4838.0005, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3205,6 +3205,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7948552439935663113, guid: 69f7c2774bded984385615c8e8d9cd03,
         type: 3}
+      propertyPath: pattern
+      value: 
+      objectReference: {fileID: 11400000, guid: a18d2fbdb07f3ff44b4a07c19e35dfd6,
+        type: 2}
+    - target: {fileID: 7948552439935663113, guid: 69f7c2774bded984385615c8e8d9cd03,
+        type: 3}
       propertyPath: fireMode
       value: 2
       objectReference: {fileID: 0}
@@ -3810,8 +3816,6 @@ MonoBehaviour:
   defs:
   - {fileID: 11400000, guid: 5fc11190e7f382e4692d7794e56b69c6, type: 2}
   - {fileID: 11400000, guid: 5fc11190e7f382e4692d7794e56b69c6, type: 2}
-  - {fileID: 11400000, guid: aa07c1efa925f1d43b54892581da6471, type: 2}
-  - {fileID: 11400000, guid: f7c2a7f45f29b0449ab668bdc53ad028, type: 2}
 --- !u!1 &1518329309
 GameObject:
   m_ObjectHideFlags: 0
