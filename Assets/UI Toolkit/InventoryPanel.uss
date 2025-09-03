@@ -1,0 +1,76 @@
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.grid {
+    position: relative;
+    -unity-overflow-clip-box: content-box;
+}
+
+.cell {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-right: 1px solid rgb(44, 44, 44);
+    border-bottom: 1px solid rgb(44, 44, 44);
+    pointer-events: none;
+}
+
+.item {
+    position: absolute;
+    pointer-events: auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+}
+
+.item.dragging {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.12);
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    outline-offset: -1px;
+}
+
+.drag-proxy {
+    position: absolute;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    opacity: 0.95;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+}
+
+.ghost {
+    position: absolute;
+    pointer-events: none;
+    outline: 2px dashed rgba(255, 255, 255, 0.35);
+    outline-offset: -1px;
+    background-color: transparent;
+    transition: background-color 80ms linear, outline-color 80ms linear;
+}
+
+.ghost-valid {
+    outline-color: rgba(0, 200, 0, 0.95);
+    background-color: rgba(0, 180, 0, 0.25);
+}
+
+.ghost-invalid {
+    outline-color: rgba(220, 0, 0, 0.95);
+    background-color: rgba(220, 0, 0, 0.25);
+}
